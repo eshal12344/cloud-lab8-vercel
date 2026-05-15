@@ -3,8 +3,8 @@ export default function Home() {
   return (
     <main style={{ textAlign: "center", marginTop: "10%" }}>
       <h1>Lab 8 — Vercel Deployment</h1>
-      <p>Name: {name}</p>
-      <p>Roll: [Your Roll Number]</p>
+      <p>Name: eshal atif</p>
+      <p>Roll: [023]</p>
     </main>
   );
 }
