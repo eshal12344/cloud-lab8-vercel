@@ -1,12 +1,8 @@
-export const runtime = "edge";
+import { NextResponse } from "next/server";
 
-import { NextRequest, NextResponse } from "next/server";
-
-export async function GET(req: NextRequest) {
-  const geo = (req as any).geo;
+export async function GET() {
   return NextResponse.json({
-    country: geo?.country || "Only available on production",
-    city: geo?.city || "Test on your deployed URL",
-    runtime: "edge",
+    message: "Hello from Vercel Serverless!",
+    time: new Date().toISOString(),
   });
 }
